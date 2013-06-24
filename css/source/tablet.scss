@@ -1,0 +1,106 @@
+@media screen and  (max-width: 940px) {
+	header {
+		h1{
+			margin: 0rem 0 2rem 1rem;
+			padding: 0;
+		}
+		.logo{
+			vertical-align: top;
+			margin: 0rem 1rem 1rem 1rem;
+			font-size: 6rem;
+			width: 7rem;
+			height: 7rem;
+			line-height: .95;
+			border-radius: 5rem;
+			margin-top: .5rem;
+
+		}
+		.heading-text{
+			h1{
+				font-size: 2.5rem;
+
+			}
+		}
+	}
+	nav{
+		ul{
+			li{
+				padding-right: 2rem;
+				font-size: 1.5rem;
+			}
+		}
+	}
+}	
+@media screen and  (max-width: 890px) {
+	.content{
+		aside{
+			width: 320px;
+			height: 320px;
+			border-radius: 200px;
+			p{
+				font-size: 1rem;
+				
+			}
+			ul{
+				li{
+					font-size: 1.2rem;
+				}
+			}
+		}
+
+	}
+
+}	
+@media screen and  (max-width: 750px) {
+	header {
+		padding-top: 1rem;
+		.logo{
+			float: none;
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+		}	
+		text-align: center;
+		&:after{
+			clear: both;
+			display: table;
+			content: "";
+		}
+	}
+	nav{
+		padding-bottom: 1rem;
+		ul{
+			li{
+				display: block;
+				font-size: 2rem;
+				padding-bottom: .5rem;
+			}
+		}
+	}
+	.content{
+		.main{
+			float: none;
+			width: auto;
+			display: block;
+			margin-right: 1rem;
+		}
+		aside{
+			@extend .main-content-element;
+			border-radius: 0;
+			width: 100%;
+			height: auto;
+			margin: 0;
+			p, ul li{
+			font-size: 2rem;
+			}
+		}
+	}
+	footer{
+		.copyright, .contact{ 
+			float: none;
+			width: auto;
+			text-align: left;
+		}
+	}
+
+}	

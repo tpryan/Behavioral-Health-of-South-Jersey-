@@ -1,0 +1,9 @@
+@media screen and (max-width: 870px) {
+  .content aside {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px; }
+    .content aside p {
+      font-size: 1.5rem; }
+    .content aside ul li {
+      font-size: 1.5rem; } }

@@ -1,0 +1,159 @@
+$light-text: MyriadPro-Light;
+$light-header: MyriadPro-LightCond;
+$logo-text: MyriadPro-SemiboldCond;
+
+
+
+
+.heading{
+	font-family: myriad-pro-condensed,sans-serif;
+	font-weight: 300;
+}
+
+.copy{
+	font-family: myriad-pro,sans-serif;
+	font-weight: 300;
+}
+
+.main-content-element{
+	max-width: 1024px;
+	padding: 0 calc(50% - 512px);
+}
+
+$blue: #5267be;
+$brown-light: #ddcba8; 
+$brown-dark: #c6b087;
+
+header {
+	@extend .main-content-element;
+	background-color: $blue;
+	box-shadow: 0 1px 5px #232C52;
+	h1{
+		@extend .heading;
+		color: #FFFFFF;
+		text-shadow: 0 0 3px #232C52;
+		margin: 0rem 0 2rem 1rem;
+	}
+	.logo{
+		margin: 1rem 1rem 1rem 1rem;
+		font-family: "myriad-pro-condensed",sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		color: $blue;
+		background-color: #FFFFFF;
+		font-size: 9rem;
+		display: inline-block;
+		width: 10rem;
+		height: 10rem;
+		text-align: center;
+		line-height: .95;
+		border-radius: 5rem;
+		box-shadow: 0 0 3px #232C52;
+		text-shadow: 0 0 2px #000;
+
+	}
+	.heading-text{
+		display: inline-block;
+		h1{
+			font-size: 3rem;
+
+		}
+	}
+}
+
+nav{
+	@extend .heading;
+
+	a{
+		color: $brown-dark;
+		text-shadow: 0 0 3px #232C52;
+		text-decoration: none;
+
+	}
+	a:hover{
+		color: $brown-light;
+	}
+	ul{
+		list-style: none;
+		margin: 0 0 0 1rem;
+		padding: 0 0 0 0;
+		li{
+			display: inline-block;
+			padding-right: 2rem;
+			font-size: 2rem;
+		}
+	}
+}
+
+footer{
+	@extend .main-content-element;
+
+	.copyright, .contact{
+		float: left;
+		width: 50%;
+		 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	}
+	.copyright{
+		padding-left: 1rem;
+	}
+	.contact{
+		text-align: right;
+		padding: 0 1rem;
+	}
+}
+
+body{
+	@extend .copy;
+	margin: 0;
+	padding: 0;
+
+}
+
+.content{
+	@extend .main-content-element;
+	font-size: 1.7rem;
+	padding-bottom: 1rem;
+	.main{
+		width: 50%;
+		float: left;
+		margin: 0 1rem;
+	}
+	aside{
+		box-shadow: 0 0 3px #423B2D;
+		background-color: $brown-light;
+		color: #fff;
+		width: 400px;
+		height: 400px;
+		margin-top: 1rem;
+		margin-left: 1rem;
+		float: left;
+		border-radius: 400px;
+		text-align: center;
+		text-shadow: 0 0 3px #423B2D;
+		p{
+			font-size: 1.5rem;
+			margin: 2rem 0 0 0;
+			padding: 0 0 1rem 0;
+			font-family: $light-text;
+			
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li{
+				padding-bottom: .5rem;
+				font-size: 1.5rem;
+				font-family: $light-header;
+				font-weight: normal;
+			}
+		}
+	}
+	&:after{
+		clear: both;
+		display: table;
+		content: "";
+	}
+
+}
+@import 'tablet';
