@@ -10,6 +10,16 @@
   max-width: 1024px;
   padding: 0 calc(50% - 512px); }
 
+strong {
+  font-family: myriad-pro,sans-serif;
+  font-weight: 400; }
+
+dt {
+  font-weight: 400; }
+
+dd {
+  font-style: italic; }
+
 header {
   background-color: #5267be;
   box-shadow: 0 1px 5px #232C52; }
@@ -33,6 +43,9 @@ header {
     border-radius: 5rem;
     box-shadow: 0 0 3px #232C52;
     text-shadow: 0 0 2px #000; }
+    header .logo a {
+      color: #5267be;
+      text-decoration: none; }
   header .heading-text {
     display: inline-block; }
     header .heading-text h1 {
@@ -80,6 +93,21 @@ body {
   padding-bottom: 1rem; }
   .content .main {
     margin: 0 1rem; }
+  .content iframe {
+    border-radius: 2000px;
+    box-shadow: 0 0 3px #5267be; }
+  .content .location {
+    width: 50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left; }
+    .content .location h3 {
+      margin-top: 0; }
+  .content .location:first-of-type {
+    padding-right: 1rem; }
+  .content .location:last-of-type {
+    padding-left: 1rem; }
   .content aside {
     box-shadow: 0 0 3px #423B2D;
     background-color: #ddcba8;
@@ -92,9 +120,13 @@ body {
     float: right;
     border-radius: 400px;
     text-align: center;
-    text-shadow: 0 0 3px #423B2D;
-    -webkit-shape-outside: circle(200px, 200px, 200px);
+    -webkit-shape-outside: circle(200px, 200px, 240px);
     overflow: hidden; }
+    .content aside:nth-of-type(2) {
+      float: left;
+      background-color: #5267be; }
+      .content aside:nth-of-type(2) blockquote {
+        text-shadow: 0 0 3px black; }
     .content aside img {
       width: 392px;
       height: 392px;
@@ -103,7 +135,8 @@ body {
     .content aside blockquote {
       padding-top: 2rem;
       font-size: 2.6rem;
-      font-style: italic; }
+      font-style: italic;
+      text-shadow: 0 0 3px #423b2d; }
     .content aside blockquote:before {
       content: "\201C"; }
     .content aside blockquote:after {
@@ -112,12 +145,14 @@ body {
       font-size: 1.5rem;
       margin: 2rem 0 0 0;
       padding: 0 0 1rem 0;
-      font-family: MyriadPro-Light; }
+      font-family: MyriadPro-Light;
+      text-shadow: 0 0 3px #423b2d; }
     .content aside ul {
       margin: 0;
       padding: 0;
       list-style: none; }
       .content aside ul li {
+        color: #5267be;
         padding-bottom: .5rem;
         font-size: 1.5rem;
         font-family: MyriadPro-LightCond;
@@ -161,7 +196,16 @@ body {
       width: 312px;
       height: 312px;
       border-radius: 400px;
-      margin-top: 4px; } }
+      margin-top: 4px; }
+  .content .location {
+    width: 100%;
+    padding: 0 0 2rem 0; }
+  .content .location:first-of-type {
+    padding-right: 0; }
+  .content .location:last-of-type {
+    padding-left: 0; }
+  .content iframe {
+    border-radius: 0; } }
 @media screen and (max-width: 750px) {
   header {
     padding-top: 1rem;

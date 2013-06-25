@@ -56,7 +56,21 @@
 				margin-top: 4px;
 			}
 		}
+		.location{
+			width: 100%;
+			padding: 0 0 2rem 0;
+
+		}
+		.location:first-of-type{
+			padding-right: 0;
+		}
+		.location:last-of-type{
+			padding-left: 0;
+		}
 		
+		iframe{
+			border-radius: 0;
+		}
 
 	}
 

@@ -1,4 +1,5 @@
 $light-text: MyriadPro-Light;
+$bold-text: MyriadPro-Light;
 $light-header: MyriadPro-LightCond;
 $logo-text: MyriadPro-SemiboldCond;
 
@@ -23,6 +24,18 @@ $logo-text: MyriadPro-SemiboldCond;
 $blue: #5267be;
 $brown-light: #ddcba8; 
 $brown-dark: #c6b087;
+
+strong{
+	font-family: myriad-pro,sans-serif;
+	font-weight: 400;
+}
+
+dt{
+	font-weight: 400;
+}
+dd{
+	font-style: italic;
+}
 
 header {
 	@extend .main-content-element;
@@ -50,6 +63,10 @@ header {
 		border-radius: 5rem;
 		box-shadow: 0 0 3px #232C52;
 		text-shadow: 0 0 2px #000;
+		a{
+			color: $blue;
+			text-decoration: none;
+		}
 
 	}
 	.heading-text{
@@ -127,6 +144,25 @@ body{
 		margin: 0 1rem;
 	}
 
+	iframe{
+		border-radius: 2000px;
+		box-shadow: 0 0 3px $blue;
+	}
+
+	.location{
+		width: 50%;
+		 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+		float: left;
+		h3{
+			margin-top: 0;
+		}
+	}
+	.location:first-of-type{
+		padding-right: 1rem;
+	}
+	.location:last-of-type{
+		padding-left: 1rem;
+	}
 
 	aside{
 		box-shadow: 0 0 3px #423B2D;
@@ -140,9 +176,16 @@ body{
 		float: right;	
 		border-radius: 400px;
 		text-align: center;
-		text-shadow: 0 0 3px #423B2D;
-		-webkit-shape-outside: circle(200px, 200px, 200px);
+		-webkit-shape-outside: circle(200px, 200px, 240px);
 		overflow: hidden;
+
+		&:nth-of-type(2){
+			float: left;
+			background-color: $blue;
+			blockquote{
+				text-shadow: 0 0 3px #000
+			}
+		}
 
 		img{
 			width: 392px;
@@ -156,6 +199,7 @@ body{
 			padding-top: 2rem;
 			font-size: 2.6rem;
 			font-style: italic;		
+			text-shadow: 0 0 3px #423B2D
 		}
 		blockquote:before{
 			content: "\201C";
@@ -164,11 +208,13 @@ body{
 			content: "\201D";
 		}
 
+
 		p{
 			font-size: 1.5rem;
 			margin: 2rem 0 0 0;
 			padding: 0 0 1rem 0;
 			font-family: $light-text;
+			text-shadow: 0 0 3px #423B2D
 			
 		}
 		ul{
@@ -176,6 +222,7 @@ body{
 			padding: 0;
 			list-style: none;
 			li{
+				color: $blue;
 				padding-bottom: .5rem;
 				font-size: 1.5rem;
 				font-family: $light-header;
