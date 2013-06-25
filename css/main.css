@@ -69,12 +69,16 @@ body {
   margin: 0;
   padding: 0; }
 
+.home .main {
+  width: 50%;
+  float: left; }
+.home aside {
+  float: left; }
+
 .content {
   font-size: 1.7rem;
   padding-bottom: 1rem; }
   .content .main {
-    width: 50%;
-    float: left;
     margin: 0 1rem; }
   .content aside {
     box-shadow: 0 0 3px #423B2D;
@@ -84,10 +88,26 @@ body {
     height: 400px;
     margin-top: 1rem;
     margin-left: 1rem;
-    float: left;
+    margin-right: 1rem;
+    float: right;
     border-radius: 400px;
     text-align: center;
-    text-shadow: 0 0 3px #423B2D; }
+    text-shadow: 0 0 3px #423B2D;
+    -webkit-shape-outside: circle(200px, 200px, 200px);
+    overflow: hidden; }
+    .content aside img {
+      width: 392px;
+      height: 392px;
+      border-radius: 400px;
+      margin-top: 4px; }
+    .content aside blockquote {
+      padding-top: 2rem;
+      font-size: 2.6rem;
+      font-style: italic; }
+    .content aside blockquote:before {
+      content: "\201C"; }
+    .content aside blockquote:after {
+      content: "\201D"; }
     .content aside p {
       font-size: 1.5rem;
       margin: 2rem 0 0 0;
@@ -134,7 +154,14 @@ body {
     .content aside p {
       font-size: 1rem; }
     .content aside ul li {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+    .content aside blockquote {
+      font-size: 2rem; }
+    .content aside img {
+      width: 312px;
+      height: 312px;
+      border-radius: 400px;
+      margin-top: 4px; } }
 @media screen and (max-width: 750px) {
   header {
     padding-top: 1rem;
@@ -168,6 +195,14 @@ body {
     margin: 0; }
     .content aside p, .content aside ul li {
       font-size: 2rem; }
+    .content aside blockquote {
+      display: none; }
+    .content aside img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      margin: 0; }
 
   footer .copyright, footer .contact {
     float: none;

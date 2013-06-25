@@ -109,15 +109,25 @@ body{
 
 }
 
+.home{
+	.main{
+		width: 50%;
+		float: left;
+	}
+	aside{
+		float: left;	
+	}
+}
+
 .content{
 	@extend .main-content-element;
 	font-size: 1.7rem;
 	padding-bottom: 1rem;
 	.main{
-		width: 50%;
-		float: left;
 		margin: 0 1rem;
 	}
+
+
 	aside{
 		box-shadow: 0 0 3px #423B2D;
 		background-color: $brown-light;
@@ -126,10 +136,34 @@ body{
 		height: 400px;
 		margin-top: 1rem;
 		margin-left: 1rem;
-		float: left;
+		margin-right: 1rem;
+		float: right;	
 		border-radius: 400px;
 		text-align: center;
 		text-shadow: 0 0 3px #423B2D;
+		-webkit-shape-outside: circle(200px, 200px, 200px);
+		overflow: hidden;
+
+		img{
+			width: 392px;
+			height: 392px;
+			border-radius: 400px;
+			margin-top: 4px;
+		}
+
+
+		blockquote{
+			padding-top: 2rem;
+			font-size: 2.6rem;
+			font-style: italic;		
+		}
+		blockquote:before{
+			content: "\201C";
+		}
+		blockquote:after{
+			content: "\201D";
+		}
+
 		p{
 			font-size: 1.5rem;
 			margin: 2rem 0 0 0;
