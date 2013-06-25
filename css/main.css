@@ -149,7 +149,8 @@ body {
       font-size: 1.5rem;
       margin: 2rem 0 0 0;
       padding: 0 0 1rem 0;
-      font-family: MyriadPro-Light;
+      font-family: myriad-pro,sans-serif;
+      font-weight: 300;
       text-shadow: 0 0 3px #423b2d; }
     .content aside ul {
       margin: 0;
@@ -159,8 +160,8 @@ body {
         color: #5267be;
         padding-bottom: .5rem;
         font-size: 1.5rem;
-        font-family: MyriadPro-LightCond;
-        font-weight: normal; }
+        font-family: myriad-pro-condensed,sans-serif;
+        font-weight: 300; }
   .content:after {
     clear: both;
     display: table;
