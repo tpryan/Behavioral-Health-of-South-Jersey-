@@ -21,6 +21,7 @@ $logo-text: MyriadPro-SemiboldCond;
 	padding: 0 calc(50% - 512px);
 }
 
+$dark-blue: #232C52;
 $blue: #5267be;
 $brown-light: #ddcba8; 
 $brown-dark: #c6b087;
@@ -78,12 +79,18 @@ header {
 	}
 }
 
+
+.home .home-link a, .about .about-link a, .specialties .specialties-link a, .location .location-link a, 
+.finances .finances-link a, .statement .statement-link a{
+	color: $dark-blue;
+}
+
 nav{
 	@extend .heading;
 
 	a{
 		color: $brown-dark;
-		text-shadow: 0 0 3px #232C52;
+		text-shadow: 0 0 3px $dark-blue;
 		text-decoration: none;
 
 	}

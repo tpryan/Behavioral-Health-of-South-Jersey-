@@ -51,9 +51,13 @@ header {
     header .heading-text h1 {
       font-size: 3rem; }
 
+.home .home-link a, .about .about-link a, .specialties .specialties-link a, .location .location-link a,
+.finances .finances-link a, .statement .statement-link a {
+  color: #232c52; }
+
 nav a {
   color: #c6b087;
-  text-shadow: 0 0 3px #232C52;
+  text-shadow: 0 0 3px #232c52;
   text-decoration: none; }
 nav a:hover {
   color: #ddcba8; }
