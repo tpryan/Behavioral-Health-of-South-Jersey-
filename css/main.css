@@ -22,10 +22,10 @@ dd {
 
 header {
   background-color: #5267be;
-  box-shadow: 0 1px 5px #232C52; }
+  box-shadow: 0 .1rem .3rem #232C52; }
   header h1 {
     color: #FFFFFF;
-    text-shadow: 0 0 3px #232C52;
+    text-shadow: 0 0 .3rem #232C52;
     margin: 0rem 0 2rem 1rem; }
   header .logo {
     margin: 1rem 1rem 1rem 1rem;
@@ -41,8 +41,8 @@ header {
     text-align: center;
     line-height: .95;
     border-radius: 5rem;
-    box-shadow: 0 0 3px #232C52;
-    text-shadow: 0 0 2px #000; }
+    box-shadow: 0 0 .3rem #232C52;
+    text-shadow: 0 0 .2rem #000; }
     header .logo a {
       color: #5267be;
       text-decoration: none; }
@@ -57,7 +57,7 @@ header {
 
 nav a {
   color: #c6b087;
-  text-shadow: 0 0 3px #232c52;
+  text-shadow: 0 0 0.3rem #232c52;
   text-decoration: none; }
 nav a:hover {
   color: #ddcba8; }
@@ -99,7 +99,7 @@ body {
     margin: 0 1rem; }
   .content iframe {
     border-radius: 2000px;
-    box-shadow: 0 0 3px #5267be; }
+    box-shadow: 0 0 0.3rem #5267be; }
   .content .location {
     width: 50%;
     -moz-box-sizing: border-box;
@@ -113,7 +113,7 @@ body {
   .content .location:last-of-type {
     padding-left: 1rem; }
   .content aside {
-    box-shadow: 0 0 3px #423B2D;
+    box-shadow: 0 0 .3rem #423B2D;
     background-color: #ddcba8;
     color: #fff;
     width: 400px;
@@ -130,7 +130,7 @@ body {
       float: left;
       background-color: #5267be; }
       .content aside:nth-of-type(2) blockquote {
-        text-shadow: 0 0 3px black; }
+        text-shadow: 0 0 0.3rem black; }
     .content aside img {
       width: 392px;
       height: 392px;
@@ -140,7 +140,7 @@ body {
       padding-top: 2rem;
       font-size: 2.6rem;
       font-style: italic;
-      text-shadow: 0 0 3px #423b2d; }
+      text-shadow: 0 0 0.3rem #423b2d; }
     .content aside blockquote:before {
       content: "\201C"; }
     .content aside blockquote:after {
@@ -151,7 +151,7 @@ body {
       padding: 0 0 1rem 0;
       font-family: myriad-pro,sans-serif;
       font-weight: 300;
-      text-shadow: 0 0 3px #423b2d; }
+      text-shadow: 0 0 0.2rem #423b2d; }
     .content aside ul {
       margin: 0;
       padding: 0;
