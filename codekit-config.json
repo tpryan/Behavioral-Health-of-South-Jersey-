@@ -79,14 +79,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/css\/main.css" : {
+    "\/css\/source\/main.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/css\/source\/main.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/main.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/img\/rita.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -99,17 +102,14 @@
       "initialSize" : 191944,
       "fileType" : 4096
     },
-    "\/css\/source\/main.scss" : {
+    "\/css\/main.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/source\/main.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/main.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/css\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/location.html" : {
       "ignoreWasSetByUser" : 0,
