@@ -1,3 +1,5 @@
+@import 'all';
+
 $light-text: MyriadPro-Light;
 $bold-text: MyriadPro-Light;
 $light-header: MyriadPro-LightCond;
@@ -23,7 +25,7 @@ $logo-text: MyriadPro-SemiboldCond;
 
 $dark-blue: #232C52;
 $blue: #5267be;
-$brown-light: #ddcba8; 
+$brown-light: #BDA881; 
 $brown-dark: #c6b087;
 
 strong{
@@ -37,11 +39,24 @@ dt{
 dd{
 	font-style: italic;
 }
+html{
+	background-color: $dark-blue;
+	@include linear-gradient($dark-blue, #222222, true);
+	height: 100%;
+	overflow-x: none;
+}
+body{
+	background-color: #FFFFFF;
+	min-height: 100%;
+
+	@include transition (all .2s ease-out);
+}
+
 
 header {
 	@extend .main-content-element;
 	background-color: $blue;
-	box-shadow: 0 .1rem .3rem #232C52;
+	//box-shadow: 0 .1rem .3rem #232C52;
 	h1{
 		@extend .heading;
 		color: #FFFFFF;
@@ -70,12 +85,18 @@ header {
 		}
 
 	}
+
+
+
 	.heading-text{
 		display: inline-block;
 		h1{
 			font-size: 3rem;
 
 		}
+	}
+	.hamburger{
+		display: none;
 	}
 }
 
@@ -135,7 +156,7 @@ body{
 
 .home{
 	.main{
-		width: 50%;
+		width: 48%;
 		float: left;
 	}
 	aside{
@@ -144,8 +165,15 @@ body{
 }
 
 .content{
+	h2{
+		margin: .5rem 0;
+	}
+	h3{
+		margin: .5rem 0;
+	}
 	@extend .main-content-element;
 	font-size: 1.7rem;
+	line-height: 1.5;
 	padding-bottom: 1rem;
 	.main{
 		margin: 0 1rem;
@@ -156,7 +184,7 @@ body{
 		height: 400px;
 		border-radius: 400px;
 		box-shadow: 0 0 .3rem $blue;
-		margin-top: 2rem;
+		margin: 2rem auto 0 auto;
 		overflow: hidden;
 	}
 
@@ -177,6 +205,7 @@ body{
 	}
 
 	aside{
+		line-height: 1.3;
 		box-shadow: 0 0 .3rem #423B2D;
 		background-color: $brown-light;
 		color: #fff;
