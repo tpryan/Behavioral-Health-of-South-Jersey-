@@ -38,6 +38,7 @@
 				<exclude name='**/import/**'/>
 				<exclude name='.project'/>
 				<exclude name='README.md'/>
+				<exclude name='ftp.txt'/>
 				<exclude name='codekit-config.json'/>
 			</fileset>	
 		</copy>
@@ -45,7 +46,7 @@
 
 	<target name="uploadFilesToProd" description="Pushes application to production.">
 
-		<echo message="Pushing Text to TerrenceRyan.com"/>
+		<echo message="Pushing text to production"/>
 		<ftp server="${ftp.server}" userid="${ftp.username}" password="${ftp.password}" 
 				timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="/" depends="yes" 
 				action="send" verbose="${verbose}" binary="no" timestampGranularity="MINUTE">
@@ -53,10 +54,11 @@
 				<include name="**/*.html"/>
 				<include name="**/*.css"/>
 				<include name="**/*.js"/>
+				<include name="**/*.xml"/>
 			</fileset>
 		</ftp>
 
-		<echo message="Pushing Binaries to TerrenceRyan.com"/>
+		<echo message="Pushing binaries to production"/>
 		<ftp server="${ftp.server}" userid="${ftp.username}" password="${ftp.password}" 
 			timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="/" depends="yes" 
 			action="send" verbose="${verbose}" binary="yes" timestampGranularity="MINUTE">
