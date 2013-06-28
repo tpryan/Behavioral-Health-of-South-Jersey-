@@ -48,7 +48,7 @@
 
 		<echo message="Pushing text to production"/>
 		<ftp server="${ftp.server}" userid="${ftp.username}" password="${ftp.password}" 
-				timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="/" depends="yes" 
+				timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="${ftp.remotedir}" depends="yes" 
 				action="send" verbose="${verbose}" binary="no" timestampGranularity="MINUTE">
 			<fileset dir="${build.dir}">
 				<include name="**/*.html"/>
@@ -60,7 +60,7 @@
 
 		<echo message="Pushing binaries to production"/>
 		<ftp server="${ftp.server}" userid="${ftp.username}" password="${ftp.password}" 
-			timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="/" depends="yes" 
+			timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="${ftp.remotedir}" depends="yes" 
 			action="send" verbose="${verbose}" binary="yes" timestampGranularity="MINUTE">
 			<fileset dir="${build.dir}">
 				<include name="**/*.jpg*"/>
