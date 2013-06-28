@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="test.ant" name="behavioralhealthsj.com" basedir=".">
+				
+	<property file="build.properties"/>
+	
+	<target name="test.ant" description="Exports the script of the database ">
+		<echo message="Testing ant in this environment. " />
+		<echo message="basedir:     ${basedir}" />
+		<echo message="ant.version: ${ant.version}" />
+	</target>
+
+	<target name="clean">
+		<echo message="Cleaning Build Space"/>
+		<delete includeemptydirs="true">
+			<fileset dir="${build.dir}" includes="**/*" defaultexcludes="no" />
+		</delete>
+	</target>
+
+
+	<target name="build" depends="clean,copyFilesToBuild,polish" description="Creating a clean copy of the site" />
+
+
+	
+	<target name="copyFilesToBuild" description="Create a gitless version of the source code.">
+		<echo message="Copying Files to Build Location"/>
+		<copy todir="${build.dir}" preservelastmodified="true" verbose="true" >
+			<fileset dir="${basedir}/">
+				<exclude name='.gitignore'/>
+				<exclude name='.git/**'/>
+				<exclude name='build.properties'/>
+				<exclude name='build.xml'/>
+				<exclude name='build.log'/>
+				<exclude name='lib/**'/>
+				<exclude name='original/**'/>
+				<exclude name='css/source'/>
+				<exclude name='**/*.scss'/>
+				<exclude name='**/cache/*.html'/>
+				<exclude name='**/import/**'/>
+				<exclude name='.project'/>
+				<exclude name='README.md'/>
+				<exclude name='codekit-config.json'/>
+			</fileset>	
+		</copy>
+	</target>
+
+
+	<target name="polish">
+		<echo message="Removing extra files."/>
+		<delete file='${build.dir}/settings.properties'/>
+		<delete file='${build.dir}/settings.old.properties'/>
+		<delete file='${build.dir}/build.xml'/>
+		<delete file='${build.dir}/build.old.xml'/>
+		<delete file='${build.dir}/build.number'/>
+		<delete file='${build.dir}/.project'/>
+		<delete file='${build.dir}/settings.xml'/>
+		<delete file='${build.dir}/sql/cleanDatabase.sql'/>
+		<delete dir='${build.dir}/trunk'/>
+		<delete dir='${build.dir}/test'/>
+		<delete dir='${build.dir}/log'/>
+		<delete dir='${build.dir}/sql'/>
+		<delete dir='${build.dir}/scripts'/>
+		<delete dir='${build.dir}/assets/css/.sass-cache'/>
+		<delete dir='${build.dir}/TerryRyansORMCodeJumpstart'/>
+
+		<replace summary="${verbose}">
+			<fileset dir="${build.dir}">
+				<exclude name="**/assets/cache/**"/>
+				<exclude name="**/examples/**"/>
+				<exclude name="**/createtheweb/**"/>
+				<exclude name="**/presos/**"/>
+			</fileset>	
+
+			<replacefilter token="terrenceryan.dev" value="terrenceryan.com"/>
+		</replace>
+
+		
+	</target>
+
+
+
+
+
+	
+
+</project>	
