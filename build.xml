@@ -43,6 +43,36 @@
 		</copy>
 	</target>
 
+	<target name="uploadFilesToProd" description="Pushes application to production.">
+
+		<echo message="Pushing Text to TerrenceRyan.com"/>
+		<ftp server="${ftp.server}" userid="${ftp.username}" password="${ftp.password}" 
+				timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="/" depends="yes" 
+				action="send" verbose="${verbose}" binary="no" timestampGranularity="MINUTE">
+			<fileset dir="${build.dir}">
+				<include name="**/*.html"/>
+				<include name="**/*.css"/>
+				<include name="**/*.js"/>
+			</fileset>
+		</ftp>
+
+		<echo message="Pushing Binaries to TerrenceRyan.com"/>
+		<ftp server="${ftp.server}" userid="${ftp.username}" password="${ftp.password}" 
+			timediffauto="true"  retriesAllowed="1" passive="yes" remotedir="/" depends="yes" 
+			action="send" verbose="${verbose}" binary="yes" timestampGranularity="MINUTE">
+			<fileset dir="${build.dir}">
+				<include name="**/*.jpg*"/>
+				<include name="**/*.gif*"/>
+				<include name="**/*.pdf*"/>
+				<include name="**/*.ppt*"/>
+				<include name="**/*.png*"/>
+				<include name="**/*.zip*"/>
+				<include name="**/*.ico*"/>
+			</fileset>
+		</ftp>
+		
+	</target>
+
 
 	<target name="polish">
 		<echo message="Removing extra files."/>
@@ -76,6 +106,16 @@
 		
 	</target>
 
+	<target name="ftp.test">
+		<ftp server="${ftp.server}" userid="${ftp.username}" password="${ftp.password}" 
+				 retriesAllowed="1" passive="yes" remotedir="/" depends="yes" 
+				action="list" verbose="${verbose}" listing="ftp.txt">
+				<fileset>
+			      <include name="**"/>
+			    </fileset>
+		</ftp>
+	
+	</target>	
 
 
 
