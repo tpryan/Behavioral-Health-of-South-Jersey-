@@ -26,3 +26,5 @@ RewriteRule  location.html /location
 RewriteRule  specialtes.html /specialtes 
 RewriteRule  statement.html /statement  
 RewriteRule  finances.html /finances 
+
+ErrorDocument 404 /404.html
