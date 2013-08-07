@@ -22,10 +22,16 @@ ExpiresDefault "access plus 1 days"
 
 Options -MultiViews
 RewriteEngine On
-RewriteRule  about.html /about
-RewriteRule  location.html /location 
-RewriteRule  specialtes.html /specialtes 
-RewriteRule  statement.html /statement  
-RewriteRule  finances.html /finances 
+Redirect 303  about.html /about
+Redirect 303  location.html /location 
+Redirect 303  specialtes.html /specialtes 
+Redirect 303  statement.html /statement  
+Redirect 303  finances.html /finances 
+Redirect 303  about.htm /about
+Redirect 303  location.htm /location 
+Redirect 303  specialtes.htm /specialtes 
+Redirect 303  statement.htm /statement  
+Redirect 303  finances.htm /finances 
+
 
 ErrorDocument 404 /404.html
