@@ -8,37 +8,31 @@
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>http://www.behavioralhealthsj.com/index.html</loc>
+      <loc>http://www.behavioralhealthsj.com/about</loc>
       <lastmod>2013-06-27</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>http://www.behavioralhealthsj.com/about.html</loc>
+      <loc>http://www.behavioralhealthsj.com/finances</loc>
       <lastmod>2013-06-27</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>http://www.behavioralhealthsj.com/finances.html</loc>
+      <loc>http://www.behavioralhealthsj.com/location</loc>
       <lastmod>2013-06-27</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>http://www.behavioralhealthsj.com/location.html</loc>
+      <loc>http://www.behavioralhealthsj.com/specialties</loc>
       <lastmod>2013-06-27</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>http://www.behavioralhealthsj.com/specialties.html</loc>
-      <lastmod>2013-06-27</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>http://www.behavioralhealthsj.com/statement.html</loc>
+      <loc>http://www.behavioralhealthsj.com/statement</loc>
       <lastmod>2013-06-27</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>

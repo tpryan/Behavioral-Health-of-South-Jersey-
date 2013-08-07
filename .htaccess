@@ -20,6 +20,7 @@ ExpiresByType text/javascript "now plus 1 months"
 ExpiresByType text/css "now plus 1 months"
 ExpiresDefault "access plus 1 days"
 
+Options -MultiViews
 RewriteEngine On
 RewriteRule  about.html /about
 RewriteRule  location.html /location 
