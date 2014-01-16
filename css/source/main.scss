@@ -179,23 +179,33 @@ body{
 		margin: 0 1rem;
 	}
 
-	.iframe-holder{
-		width: 400px;
-		height: 400px;
-		border-radius: 400px;
-		box-shadow: 0 0 .3rem $blue;
-		margin: 2rem auto 0 auto;
-		overflow: hidden;
-	}
+	
 
 	.location{
-		text-align: center;
-		width: 50%;
+		text-align: left;
+		width: 100%;
 		 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 		float: left;
 		h3{
 			margin-top: 0;
 		}
+        
+        address {
+            width: 260px;
+            display:inline-block;
+            float: left;
+        }    
+        
+        .iframe-holder{
+            width: 600px;
+            height: 600px;
+            border-radius: 400px;
+            box-shadow: 0 0 .3rem $blue;
+            margin: 0 auto 0 auto;
+            overflow: hidden;
+            float: left;
+        }
+        
 	}
 	.location:first-of-type{
 		padding-right: 1rem;

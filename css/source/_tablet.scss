@@ -78,13 +78,14 @@
 				margin-top: 4px;
 			}
 		}
-		.iframe-holder{
-			width: 350px;
-			height: 350px;
-			border-radius: 350px;
-			z-index: 1000000;
-		}
-
+        .location{
+            .iframe-holder{
+                width: 450px;
+                height: 450px;
+                border-radius: 350px;
+                z-index: 1000000;
+            }
+        }
 
 	}
 	footer{
@@ -229,6 +230,17 @@
 			width: 100%;
 			padding: 0 0 2rem 0;
 			text-align: left;
+            
+            .iframe-holder{
+                margin-top: 1rem;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            iframe{
+                border-radius: 0;
+                width: 100%;
+                height: 400px;
+            }
 
 		}
 		.location:first-of-type{
@@ -237,15 +249,8 @@
 		.location:last-of-type{
 			padding-left: 0;
 		}
-		.iframe-holder{
-			border-radius: 0;
-			max-width: 100%;
-		}
-		iframe{
-			border-radius: 0;
-			width: 100%;
-			height: 400px;
-		}
+        
+		
 	}
 	
 
